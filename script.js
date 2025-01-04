@@ -1,15 +1,16 @@
-const header_bars_icon = document.querySelector(".header-bars-icon")
+const header_bars_icon = document.querySelector(".header-bars-icon .fa-bars")
+const header_close_icon = document.querySelector(".header-bars-icon .fa-xmark")
 const header_menu = document.querySelector(".header-menu")
 header_bars_icon.addEventListener("click", () => {
-    if (!header_bars_icon.className.includes("active")) {
-        header_bars_icon.classList.add("active")
-        header_menu.classList.add("active")
-    } else {
-        header_bars_icon.classList.remove("active")
-        header_menu.classList.remove("active")
-    }
+    header_bars_icon.classList.add("hidden")
+    header_close_icon.classList.remove("hidden")
+    header_menu.classList.add("active")
+})
 
-
+header_close_icon.addEventListener("click", () => {
+    header_close_icon.classList.add("hidden")
+    header_bars_icon.classList.remove("hidden")
+    header_menu.classList.remove("active")
 })
 
 
