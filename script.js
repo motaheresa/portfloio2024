@@ -65,10 +65,6 @@ window.addEventListener("scroll", () => {
 
 
 
-
-
-
-
 // setTimeout(() => {
 //     document.querySelector(".intro").classList.add("hidden")
 //     document.querySelector(".site").classList.remove("hidden")
