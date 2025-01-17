@@ -606,6 +606,28 @@ main>.animted-back-layer .circular-img:nth-child(2) {
     position: relative;
 }
 
+.download-cv{
+    padding: 0;
+}
+
+.download-cv a{
+    display: inline-block;
+    width: 100%;
+    padding: 10px 28px;
+    height: 100%;
+    color: var(--secondary-color);
+}
+
+.upwork-svg svg{
+    fill: var(--main-color);
+    width: 70%;
+}
+
+.upwork-svg:hover svg{
+    fill: var(--secondary-color);
+}
+
+
 #home .home-content .home-content-right .home-content-right-image div .home-content-right-image-icons {
     position: absolute;
     inset: 0;
